@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="lab1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="cars">
+    <Key>
+      <PropertyRef Name="id_car" />
+    </Key>
+    <Property Name="id_car" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="model" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="color" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="drivers" Relationship="Self.FK__drivers__car_id__4316F928" FromRole="cars" ToRole="drivers" />
+  </EntityType>
+  <EntityType Name="drivers">
+    <Key>
+      <PropertyRef Name="id_driver" />
+    </Key>
+    <Property Name="id_driver" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="firstname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="surname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="middlename" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="car_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="cars" Relationship="Self.FK__drivers__car_id__4316F928" FromRole="drivers" ToRole="cars" />
+  </EntityType>
+  <Association Name="FK__drivers__car_id__4316F928">
+    <End Role="cars" Type="Self.cars" Multiplicity="1" />
+    <End Role="drivers" Type="Self.drivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cars">
+        <PropertyRef Name="id_car" />
+      </Principal>
+      <Dependent Role="drivers">
+        <PropertyRef Name="car_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="lab1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cars" EntityType="Self.cars" />
+    <EntitySet Name="drivers" EntityType="Self.drivers" />
+    <AssociationSet Name="FK__drivers__car_id__4316F928" Association="Self.FK__drivers__car_id__4316F928">
+      <End Role="cars" EntitySet="cars" />
+      <End Role="drivers" EntitySet="drivers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

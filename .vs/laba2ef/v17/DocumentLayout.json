@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\F15\\source\\repos\\laba2ef\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7CBD0CFF-4B9C-46C2-BF0A-27A3D181D580}|laba2ef.csproj|C:\\Users\\F15\\source\\repos\\laba2ef\\driverseditorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CBD0CFF-4B9C-46C2-BF0A-27A3D181D580}|laba2ef.csproj|solutionrelative:driverseditorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CBD0CFF-4B9C-46C2-BF0A-27A3D181D580}|laba2ef.csproj|C:\\Users\\F15\\source\\repos\\laba2ef\\carseditorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CBD0CFF-4B9C-46C2-BF0A-27A3D181D580}|laba2ef.csproj|solutionrelative:carseditorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CBD0CFF-4B9C-46C2-BF0A-27A3D181D580}|laba2ef.csproj|C:\\Users\\F15\\source\\repos\\laba2ef\\driverseditorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7CBD0CFF-4B9C-46C2-BF0A-27A3D181D580}|laba2ef.csproj|solutionrelative:driverseditorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CBD0CFF-4B9C-46C2-BF0A-27A3D181D580}|laba2ef.csproj|C:\\Users\\F15\\source\\repos\\laba2ef\\carseditorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7CBD0CFF-4B9C-46C2-BF0A-27A3D181D580}|laba2ef.csproj|solutionrelative:carseditorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarsEditorWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\F15\\source\\repos\\laba2ef\\CarsEditorWindow.xaml",
+              "RelativeDocumentMoniker": "CarsEditorWindow.xaml",
+              "ToolTip": "C:\\Users\\F15\\source\\repos\\laba2ef\\CarsEditorWindow.xaml",
+              "RelativeToolTip": "CarsEditorWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-16T12:44:27.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarsEditorWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\F15\\source\\repos\\laba2ef\\CarsEditorWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CarsEditorWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\F15\\source\\repos\\laba2ef\\CarsEditorWindow.xaml.cs",
+              "RelativeToolTip": "CarsEditorWindow.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwCEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T12:23:22.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DriversEditorWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\F15\\source\\repos\\laba2ef\\DriversEditorWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DriversEditorWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\F15\\source\\repos\\laba2ef\\DriversEditorWindow.xaml.cs",
+              "RelativeToolTip": "DriversEditorWindow.xaml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T12:22:15.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DriversEditorWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\F15\\source\\repos\\laba2ef\\DriversEditorWindow.xaml",
+              "RelativeDocumentMoniker": "DriversEditorWindow.xaml",
+              "ToolTip": "C:\\Users\\F15\\source\\repos\\laba2ef\\DriversEditorWindow.xaml",
+              "RelativeToolTip": "DriversEditorWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-16T11:18:48.425Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище lab1Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="cars">
+    <Key>
+      <PropertyRef Name="id_car" />
+    </Key>
+    <Property Name="id_car" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="model" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="color" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="drivers">
+    <Key>
+      <PropertyRef Name="id_driver" />
+    </Key>
+    <Property Name="id_driver" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="firstname" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="surname" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="middlename" Type="nvarchar" MaxLength="100" />
+    <Property Name="car_id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__drivers__car_id__4316F928">
+    <End Role="cars" Type="Self.cars" Multiplicity="1" />
+    <End Role="drivers" Type="Self.drivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cars">
+        <PropertyRef Name="id_car" />
+      </Principal>
+      <Dependent Role="drivers">
+        <PropertyRef Name="car_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище lab1ModelContainer">
+    <EntitySet Name="cars" EntityType="Self.cars" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="drivers" EntityType="Self.drivers" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__drivers__car_id__4316F928" Association="Self.FK__drivers__car_id__4316F928">
+      <End Role="cars" EntitySet="cars" />
+      <End Role="drivers" EntitySet="drivers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

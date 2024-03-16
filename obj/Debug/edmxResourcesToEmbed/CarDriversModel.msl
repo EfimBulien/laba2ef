@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище lab1ModelContainer" CdmEntityContainer="lab1Entities">
+    <EntitySetMapping Name="cars">
+      <EntityTypeMapping TypeName="lab1Model.cars">
+        <MappingFragment StoreEntitySet="cars">
+          <ScalarProperty Name="id_car" ColumnName="id_car" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="color" ColumnName="color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="drivers">
+      <EntityTypeMapping TypeName="lab1Model.drivers">
+        <MappingFragment StoreEntitySet="drivers">
+          <ScalarProperty Name="id_driver" ColumnName="id_driver" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="car_id" ColumnName="car_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
